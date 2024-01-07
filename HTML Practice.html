@@ -3,20 +3,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ahmet Eren İNCİR</title>
+    <!--Internal CSS-->
+    <style>
+        h1 {color:darkgray;}
+    </style>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/icon.png">
 </head>
 <body style="background-color: powderblue;"><!--Body nin arka plan rengi inline css ile değiştiriliyor.-->
-    <p><b>Eren İncir Kişisel Web Sitesi</b></p><!--<b></b> yazıyı bolda çeviriyor.-->
-    <img src="/images/profil.jpeg" alt="Eren" width="100" height="100"></img>
+    <p><b>Eren İncir Kişisel Web Sitesi</b></p><!--<b></b> tagi arasındakis yazıyı bolda çeviriyor.-->
+    <img src="/images/profil.jpeg" alt="Eren" width="100" height="100" class="profilePic"></img>
     <hr/>
-    <a href="https://www.linkedin.com/in/ahmet-eren-incir/">My Linkedin Profile</a>
+    <p class="Linkedin"><a href="https://www.linkedin.com/in/ahmet-eren-incir/">My Linkedin Profile</a></p>
     <p>About me</p>
     <p>
         Hi. My name is Eren<br>
         I am Computer Sciencist and I am a Software Engineer.
     </p>
-    <pre><!--Burada direkt olarak koyduğumuz boşluklar ekranda görüntülenebiliyor.-->
-        Education:
-            Gebze Technical University(2016-2022)
-    </pre>
+    <table class="Edu">
+        <tr>
+            <th style="width: 70;">School</th>
+            <th style="width: 30;">Years</th>
+        </tr>
+        <tr>
+            <th>Gebze Technical University</th>
+            <th>2016-2022</th>
+        </tr>
+    </table>
+    
 </body>
 </html>
